@@ -12,15 +12,21 @@
 </head>
 
 <body>
-    <!-- As a heading -->
+    <!-- Create Navbar using Bootstrap -->
     <nav class="navbar bg-primary">
         <div class="container-fluid">
             <span class="navbar-brand mb-5 h1">Weather Dashboard</span>
         </div>
     </nav>
 
+        <!-- Create input search button using Bootstrap -->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+
+        <!-- Create favorite city search buttons using Bootstrap  -->
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary" type="button">Search</button>
             <button class="btn btn-secondary" type="button">Austin</button>
             <button class="btn btn-secondary" type="button">Chicago</button>
             <button class="btn btn-secondary" type="button">New York</button>
@@ -31,7 +37,8 @@
             <button class="btn btn-secondary" type="button">Atlanta</button>
         </div>
       
-    <!-- Create cards for 5 days forecast -->
+    <!-- Create cards for 5 days forecast using Bootstrap -->
+    <h3>5-Day Forecast:</h3>
     <div class="container">
         <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
             <div class="card-header">Date</div>
@@ -79,8 +86,6 @@
             </div>
         </div>
     </div>
-
-
 
     <script src="./assets/script.js"></script>
 </body>
