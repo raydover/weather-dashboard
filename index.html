@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Document</title>
 </head>
@@ -13,112 +13,46 @@
 <body>
     <!-- Create Navbar using Bootstrap -->
     <nav class="navbar bg-primary">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 text-white">
-                <h1>Weather Dashboard</h1>
-            </span>
+        <div class="container-fluid p-3">
+            <div class="title text-white h1">Weather Dashboard</div>
         </div>
     </nav>
 
     <!-- Create input search button using Bootstrap -->
-    <div class="container d-flex flex-column">
-        <h3>Search for a City:</h3>
-        <div class="container-fluid">
+    <div class="container d-flex flex-column p-3">
+        <div class="city h3">Search for a City:</div>
+        <div class="container-fluid p-3">
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-primary" type="submit">Search</button>
             </form>
+        </div>
+    </div>
 
-
-
-
-            <!-- Create favorite city search buttons using Bootstrap  -->
-            <!-- <div class="d-flex flex-row mx-auto p-3">
-                <button class="btn btn-secondary" type="button">Austin</button>
-                <button class="btn btn-secondary" type="button">Chicago</button>
-                <button class="btn btn-secondary" type="button">New York</button>
-                <button class="btn btn-secondary" type="button">Orlando</button>
-                <button class="btn btn-secondary" type="button">San Fransico</button>
-                <button class="btn btn-secondary" type="button">Seattle</button>
-                <button class="btn btn-secondary" type="button">Denver</button>
-                <button class="btn btn-secondary" type="button">Atlanta</button>
-            </div>
-        </div> -->
-
-
-
-
-
-        <!-- Create display to show selected city weather -->
+    <!-- Create display to show selected city weather -->
+    <div class="container d-flex flex-column p-3">
         <div class="card">
-            <h5 class="card-title m-2">City</h5>
-            <p class="card-text m-2">Date</p>
-            <div p class="card-text m-2">Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
-                <p>UV Index:</p>
-            </div>
+            <div class="card-title m-2 h3">City</div>
+            <div class="card-date m-2 h4">Date</div>
+            <div class="card-temp m-2 p-2 h5">Temp:</div>
+            <div class="card-wind m-2 p-2 h5">Wind:</div>
+            <div class="card-humidity p-2 m-2 h5">Humidity:</div>
+            <div class="card-uvIndex m-2 p-2 h5">UV Index:</div>
         </div>
     </div>
 
     <!-- Create cards for 5 days forecast using Bootstrap -->
     <div class="container d-flex flex-row p-3">
-        <h4>5-Day Forecast:</h4>
+        <div class="fiveDay p-3 h4">5-Day Forecast:</div>
         <div class="card bg-primary mb-3" style="max-width: 18rem;">
             <div class="card-header text-white">Date</div>
             <div class="card-body">
-                <h5 class="card-title text-white">Weather Expected Symbol</h5>
-                <div id p class="card-text text-white">Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
+                <div class="card-title text-white p-2 h3">Weather Expected Symbol</div>
+                <div class="card-temp text-white p-2 h5">Temp:</div>
+                <div class="card-wind text-white p-2 h5">Wind:</div>
+                <div class="card-humidity text-white p-2 h5">Humidity:</div>
             </div>
         </div>
-
-
-        <!-- <div class="card bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header text-white">Date</div>
-            <div class="card-body">
-                <h5 class="card-title text-white">Weather Expected Symbol</h5>
-                <div id p class="card-text text-white">Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-            </div>
-        </div>
-        <div class="card bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header text-white">Date</div>
-            <div class="card-body">
-                <h5 class="card-title text-white">Weather Expected Symbol</h5>
-                <div id p class="card-text text-white">Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-            </div>
-        </div>
-        <div class="card bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header text-white">Date</div>
-            <div class="card-body">
-                <h5 class="card-title text-white">Weather Expected Symbol</h5>
-                <div id p class="card-text text-white">Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-            </div>
-        </div>
-        <div class="card bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header text-white">Date</div>
-            <div class="card-body">
-                <h5 class="card-title text-white">Weather Expected Symbol</h5>
-                <div id p class="card-text text-white">Temp:</p>
-                    <p>Wind:</p>
-                    <p>Humidity:</p>
-                </div>
-            </div>
-        </div> -->
-
-
-
     </div>
 
     <script src="./assets/script.js"></script>
